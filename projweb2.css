@@ -1,0 +1,208 @@
+
+body {
+
+    background-image: url("image4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family:arial;
+}
+
+.h1{
+
+    text-align: center;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 105%;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.cadre {
+  position: center;   /* pour servir de référent */
+  width: 16em;          /* largeur à ajuster suivant le besoin */
+  overflow: hidden;     /* masque les dépassements */
+  line-height: 2em;     /* pour centrage vertical */
+}
+
+.cadre img {
+            /* image au dessus */
+  margin-left: 4em;
+  margin-right: auto;  /* pour prise en compte z-index */
+  width: 3em;           /* largeur à ajuster suivant le besoin */
+}
+
+.cadre span {
+  display: block;
+  position: absolute;   /* positionnement hors flux */
+  left: -250%;          /* décalage à gauche toute */
+  padding: 1em;     /* un peu d'espace latéral */
+  color: #eee;  
+  bottom: 1em; 
+  width: 10em;       
+  background: grey;     /* couleur du fond à ajuster suivant le besoin */
+  border-radius: 4px;
+  border-style: solid;
+  border-width: medium;
+
+  transition: all .5s;  /* la transition à appliquer */
+  
+}
+
+.cadre:hover span {
+  left: 1em;            /* position égale à la largeur de l'image */
+}
+
+.button {
+    background-color: #555555; 
+    border: none;
+    color: white;
+    padding: 8px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius:4px;
+}
+
+.button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #555555;
+}
+
+.button1:hover {
+    background-color: #555555;
+    color: white;
+}
+
+.inputfonction{
+    margin: 8px;
+    border-radius:4px;
+    background-color: white;
+    border:1px solid #ccc;
+    padding: 8px 24px;
+    text-align: center;
+}
+
+input[type=range]{
+    -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #555555;
+    margin-top: -5px;
+}
+
+input[type=range]:focus {    
+    outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ccc;
+}
+
+.outputrange{
+    
+    background-color: #555555; 
+    border: none;
+    color: white;
+    padding: 8px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+
+    border-radius:4px;
+}
+
+.rectangle1{
+    text-align:center;
+    position:absolute;
+    width: 315px;
+    height: 230px;
+    border:5px solid #555555;
+    border-radius: 10px;
+    left:43px;
+    top:140px;
+    background-blend-mode: overlay;
+    background-color: white;
+}
+
+.rectangle2{
+    text-align:center;
+    position:absolute;
+    width: 315px;
+    height: 230px;
+    border:5px solid #555555;
+    border-radius: 10px;
+    left:42px;
+    top:400px;
+    background-blend-mode: overlay;
+    background-color: white;
+}
+
+.rectangle3{
+    text-align:center;
+    position:absolute;
+    width: 315px;
+    height: 80px;
+    border:5px solid #555555;
+    border-radius: 10px;
+    left:43px;
+    top:660px;
+    background-blend-mode: overlay;
+    background-color: white;
+}
+#canvas{
+    position:absolute;
+    left:390px;
+    top:10px;
+    border:5px solid #555555;
+    border-radius: 10px;
+    top:140px;
+    border:5px solid #555555;
+    background-blend-mode: overlay;
+    background-color: white;
+}
+
+
+   

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+
+
+<html>
+  <head>
+
+    <title style="text-align:center;"> Projet Web</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="projweb2.js"></script>
+    <link rel="stylesheet" type="text/css" href="projweb2.css">
+    <br> <h1>   Projet Web: Les Ondes            Fadi SHEHADEH & Wacim KHENISSI </h1> 
+
+  </head>
+
+  <body>
+
+
+  
+  <div>
+
+  <canvas id="canvas"  width="920" height="600">
+  Your browser does not support the HTML5 canvas tag.</canvas>
+
+  </div>
+
+
+<!-- PREMIERE ONDE -->  
+  <div class="rectangle1">
+
+    <form>
+
+     <br>
+
+     <div class="tooltip"> <strong>Fonction <i>f(x)</i> </strong> <span class="tooltiptext"> Entrer une première fonction sinusoïdale</span></div> : <input type="text" class="inputfonction" id="f_x"> 
+
+      <br>
+
+    </form>
+
+
+    <strong> Amplitude</strong>   : <input type="range"   id="amplitude" oninput="amplitudeout.value=amplitude.value"  min="O" max="50" value="25" aria-label="Selectionner l'amplitude"/>
+
+    <output class="outputrange" id="amplitudeout">25</output>
+
+    <br>
+
+    <strong>Période &nbsp &nbsp  </strong>   : <input type="range"   id="periode" oninput="periodeout.value=periode.value"  min="10" max="100" value="50" aria-label="Selectionner la Période"/>
+
+    <output class="outputrange" id="periodeout">55</output>
+
+    <br>
+
+    <strong> Déphasage </strong> 
+
+    <br>
+
+    <input type=button class="button button1" id="dephasageneg" value="<">
+    <input type=button class="button button1" id="dephasagepos" value=">">
+
+    <br>
+    <br>
+
+ </div>
+
+
+
+<!-- DEUXIEME ONDE-->
+
+
+
+ <div class="rectangle2">
+
+  <br>
+
+  <div class="tooltip"> <strong>Fonction <i>f(x)</i> </strong>
+
+    <span class="tooltiptext"> Entrer une deuxième fonction sinusoïdale</span>
+
+  </div> : <input type="text" class="inputfonction" id="f_xbis"> 
+
+<br>
+  <strong> Amplitude</strong> : <input type="range" id="amplitude2"oninput="amplitudeout2.value=amplitude2.value" min="O" max="50" value="25" aria-label="Selectionner l'amplitude">
+
+  <output class="outputrange" id="amplitudeout2">25</output>
+
+  <br>
+
+  <strong> Période  &nbsp &nbsp</strong>  : <input type="range"   id="periode2" oninput="periodeout2.value=periode2.value"  min="10" max="100" value="50" aria-label="Selectionner la Période"/>
+  <output class="outputrange" id="periodeout2">55</output>
+  <br>
+
+  <strong> Déphasage </strong> <br>
+
+  <input type=button class="button button1" id="dephasageneg2" value="<">
+  <input type=button class="button button1" id="dephasagepos2" value=">">
+
+  <br>
+
+
+  <br>
+
+
+ </div> 
+
+
+  <div class="rectangle3">
+  
+    <input type=button class="button button1" id="go" value="Lancer">
+
+  
+    <input type=button class="button button1" id="stopit" value="Pause">
+
+    <div class="cadre" position="relative" left=100px> 
+
+      <span>Entrer deux fonctions sinusoidales, choisir l'amplitude et la période, et cliquer sur Lancer</span>
+      <img src="image2.jpg" >   
+
+    </div>
+
+ </div>
+
+ </body>
+
+</html>
